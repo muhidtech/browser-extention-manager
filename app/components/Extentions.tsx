@@ -57,7 +57,8 @@ export default function Extensions() {
             <motion.div 
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.5, ease: 'easeInOut' }}
+            transition={{ duration: 1.5, ease: 'easeInOut', delay: id * 0.1 }}
+            whileHover={{ scale: 1.05 }}
             key={id} 
             className="p-4 bg-gray-100 dark:bg-gray-800 dark:text-white rounded-2xl shadow-md hover:shadow-lg transition-shadow duration-300">
                 <div className='flex items-center gap-5 mb-5 '>
